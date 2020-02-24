@@ -1,0 +1,42 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+  public class Main{  
+void e(){
+    System.out.println("aniritha");}  
+    public static void main(String[] args){  
+B d = new B();  
+d.e();  
+d.b();
+d.w();
+
+}
+  }
+class D extends Main{  
+void b(){System.out.println("9884600505");}  
+public static void main(String[] args){  
+B d = new B();  
+d.e();  
+d.b();
+
+
+}
+}  
+ class B extends D{  
+void w(){System.out.println("india");}  
+
+
+
+} 
+    
+    
+
+
+
+
+
+
