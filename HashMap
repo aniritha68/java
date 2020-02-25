@@ -1,0 +1,54 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 Map<Integer,String> map  = new HashMap<>(); 
+	  Scanner sc = new Scanner(System.in);
+	  int c=0;
+	  System.out.println("Enter the  number of students");
+	   int a=sc.nextInt();
+	   
+	    System.out.println("Enter " + ++c  + " mark :");
+	   for(int i=0;i<a;i++)
+	   {
+	        System.out.println("enter rollnumber ");
+	       int roll = sc.nextInt();
+	       
+	       System.out.println("enter mark1 ");
+	       int sub1_marks =sc.nextInt();
+	       
+	       System.out.println("enter mark2");
+	       int sub2_marks =sc.nextInt();
+	       
+	         System.out.println("enter mark3 ");
+	       int sub3_marks =sc.nextInt();
+	       
+	       System.out.println("enter mark4 ");
+	       int sub4_marks =sc.nextInt();
+	       
+	        System.out.println("enter mark5 ");
+	       int sub5_marks =sc.nextInt();
+	   }
+	   main an =new main()
+	   
+	   
+// // 	 map.put(68,"ani");
+// // 	 map.put(78,"bhargavi");
+// 	 System.out.println("Enter the student number");
+
+//     //   int a =sc.nextInt();
+//       int a=sc.nextInt();
+//     //   map<Integer> m =new Hashmap<>();
+//     //   m.put(a);
+//       if(map.containsKey(a))
+//       {
+//         String n =map.get(a);
+//           System.out.println();
+       
+//       }
+//       else
+//       {
+//           System.out.println("invalid");
+//       }
+      
+      
