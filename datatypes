@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the integer");
+	int x =sc.nextInt();
+	System.out.println("Enter the float");
+	float y =sc.nextFloat();
+	System.out.println("Enter the double");
+	double z =sc.nextDouble();
+	System.out.println("Enter the char");
+	int a =(char)sc.nextInt();
+    System.out.println("Enter the string");
+	String b =sc.next();
+	System.out.println("Enter the byte");
+	String c =sc.next();
+	boolean d =true;
+	System.out.println("Enter the number");
+	int e =sc.nextInt();
+if(e>0)
+System.out.println(d);
+	
+	
+	}
+}
