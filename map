@@ -1,0 +1,20 @@
+
+// // 	 map.put(68,"ani");
+// // 	 map.put(78,"bhargavi");
+// 	 System.out.println("Enter the student number");
+
+//     //   int a =sc.nextInt();
+//       int a=sc.nextInt();
+//     //   map<Integer> m =new Hashmap<>();
+//     //   m.put(a);
+//       if(map.containsKey(a))
+//       {
+//         String n =map.get(a);
+//           System.out.println();
+       
+//       }
+//       else
+//       {
+//           System.out.println("invalid");
+//       }
+      
