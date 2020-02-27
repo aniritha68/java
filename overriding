@@ -1,0 +1,54 @@
+
+public class Main
+{
+   static void number(int i,int j){
+    //adding numbers
+    
+	System.out.println("Adding");
+	System.out.println(" i + j = " + (i + j));
+	
+
+	//subtracting numbers
+	System.out.println("Subtracting");
+	System.out.println(" i - j = " + (i - j));
+
+	//multiplying numbers
+	System.out.println("Multiplying");
+	System.out.println(" i * j = " + (i * j));
+
+
+	//dividing numbers
+	System.out.println("Dividing");
+	System.out.println(" i / j = " + (i / j));
+
+	//computing the remainder resulting
+	//from dividing numbers
+	System.out.println("Modulus");
+	System.out.println(" i % j = " + (i % j));
+    }
+
+   static  void number(double x,double y)
+    {
+        System.out.println(" x + y = " + (x + y));
+        	System.out.println(" x - y = " + (x - y));
+System.out.println(" x * y = " + (x * y));
+	System.out.println(" x / y = " + (x / y));
+	System.out.println(" x % y = " + (x % y));
+
+    }
+
+
+
+
+
+
+
+	public static void main(String[] args) {
+	int i = 10;
+	int j = 20;
+	double x = 10.5;
+	double y = 20.5;
+   number(i,j);
+   
+	}
+}
