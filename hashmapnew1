@@ -1,17 +1,17 @@
+import java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
-  Map<List<Integer>,Map< Map<String,Integer> > map  = new HashMap<>(); 
+  Map<List<Integer>,Map<String,Integer> > map  = new HashMap<>(); 
   Map<String,Integer> newmap =new LinkedHashMap<>();
   List<Integer> l = new LinkedList<>();
 	  Scanner sc = new Scanner(System.in);
 	  
 	  System.out.println("Enter the  number of students");
 	   int a=sc.nextInt();
-
-	   // System.out.println("Enter " + ++c  + " mark :");
 	   for(int i=0;i<a;i++)
 	   {
+	       
 	        System.out.println("enter rollnumber ");
 	       int roll = sc.nextInt();
 	       l.add(roll);
@@ -20,23 +20,21 @@ public class Main
 	        String subject1 =sc.next();
 	        int mark1 =sc.nextInt();
 	          newmap.put(subject1,mark1);
-	       
-	        
-
 	       System.out.println("enter subject2\n "+ "enter mark2 ");
 	       String subject2 =sc.next();
 	       int mark2 =sc.nextInt();
 	       newmap.put(subject2,mark2);
-	       //Student stu=new Student(subject1,subject2,mark1, mark2);
-	       //Rollnumber rollnum =new Rollnumber(roll);
-	       //System.out.println("subject1"+stu.subject1);
-	       //	       System.out.println("subject2"+stu.subject2);
-	       //System.out.println("mark1"+stu.mark1);
-	       //	       System.out.println("mark2"+stu.mark2);
-
-	       //System.out.println("roll"+rollnum.roll);
-	       
-	       //   System.out.println(stu.roll);
-	   ///}
 	   map.put(l,newmap);
 	}
+	 System.out.println("enter the roll number ");
+	 int getrollnum =sc.nextInt();
+  for (Map.Entry<List<Integer>,Map<String,Integer> >  entry : map.entrySet()) 
+  {
+     List<Integer> studObj=entry.getKey();  
+                            Map<String,Integer> rollObj=entry.getValue();
+                               System.out.println(studObj.subject1+"\t"+studObj.mark1+"\t"+studObj.subject2+"\t"+studObj.mark2);
+ 
+  }
+	 
+	}
+}
