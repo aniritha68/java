@@ -12,7 +12,7 @@ public class Calculator1
 
   public static void main (String[]args)
   {
- double c = 0, b = 0,d=0;
+ double c = 0, b = 0,d=0,m=1;
       System.out.print ("1. addition \n");
       System.out.print ("2. subtraction \n");
       System.out.print ("3. division \n");
@@ -51,13 +51,26 @@ public class Calculator1
              if(val3==0)
          {
              System.out.println (" enter only 2 numbers ? :");
-	int divnumber = scan.nextInt ();
-	Double divnum1 =scan.nextDouble();
+Double divnum1 =scan.nextDouble();
 	  Double divnum2 =scan.nextDouble();
          d=divnum1 / divnum2;
-	     System.out.println((float)d);
-         }   
-         
+         c=divnum1 % divnum2;
+	     System.out.println("Quotient " + (double)d);
+System.out.println("Remainder " + (double)c);
+         }  
+  
+         int val4 = namevalue.compareTo("multiplication");  
+             if(val4==0)
+         {
+             System.out.println ("  how many numbers u want to multiply ? :");
+             int mul = scan.nextInt();
+	  for (int i = 0;i <= mul;i++)
+	  {
+	    Double mulnum = scan.nextDouble();
+	    m*=mulnum;
+	     System.out.println((double)m);
+}
+}
          
       
 
