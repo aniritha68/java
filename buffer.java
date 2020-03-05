@@ -1,36 +1,49 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
 import java.util.*;
-import java.lang.*;
 
 
-public class buffer
+
+public class Main
 {
   public static void main (String[]args)
   {
-    StringBuffer buffer = new StringBuffer ("ani");
-    StringBuffer buffernew = new StringBuffer ("_n_");
+     char[] chararray = {'a','b','c','d','e'};
+     char[] chararray1 ={ '&','&','&','&','&'};
 
-
-    String str1;
-    
-    for (int i = 1; i <= buffer.length (); i++)
+int c=0;
+    for (int i =0; i <chararray.length; i++)
       {
-	System.out.println ("guess the " + i + " character? \n" + "CHANCE " +i);
+          	System.out.println ("guess the " + i + " character? \n" + "CHANCE " + i);
 	Scanner scan = new Scanner (System.in);
-	String str = scan.next ();
-	if (str.equals (str.toUpperCase ()))
-	    str1 = str.toLowerCase ();
-	else
-	    str1 = str;
-	   
-int val=buffer.indexOf(str1);
-if(val == -1 )
-{
-System.out.println("your guess is Wrong");
-}
-else{
-    System.out.println("your guess is correct");
-}
- 
+	char str = scan.next().charAt(0);
+          for(int j=0; j <chararray.length; j++){
+		  if(chararray[j]==str){
+		   c++;   
+	 System.out.println("your guess is right");
+	         chararray1[j]=chararray[j];
+	        chararray[j]=0;
+            System.out.println(chararray1);}
+          	
       }
-  }
+      if(c==0)
+          {
+		    System.out.println("your guess is wrong");}
+			c=0;
+
+  	
+}		
+
 }
+
+	
+}
+
+  
+
