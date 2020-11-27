@@ -1,0 +1,40 @@
+import java.util.*;  
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String with delimeter");
+		String str= sc.nextLine();  
+		System.out.println("Enter the delimeter");
+		String str1= sc.nextLine();
+		String word = "";
+		str=str+str1;
+		System.out.println(str);
+	  List<String>   liststring  
+            = new ArrayList<String>(); 
+		 for (int i = 0; i <= str.length()-1; i++) {
+			 if (str.charAt(i) != str1.charAt(0)){
+			word = word + str.charAt(i);
+			 
+			 }
+			 	
+			 else 
+			 {  
+			     if(word.length()!=0)
+			     liststring.add(word);
+			    word ="";
+			    
+			 }
+
+			 }
+			 
+			 String longstring = liststring.get(0);
+			 for(String val : liststring){
+			     if(val.length()> longstring.length())
+			     longstring = val;
+			 }
+		 System.out.println(longstring);
+		
+	
+}
+}
